@@ -102,3 +102,20 @@ li a:active {
   border: 3px solid #eaedee;
   border-radius: 20px;
 }
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #2d2a24;
+	height: 40px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+#copyright {
+	color: white;
+	font-weight: 1;
+	font-size: 13px;
+}
