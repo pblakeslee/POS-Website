@@ -1,4 +1,25 @@
 * {
-	padding: 0px;
-	margin: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+#productCards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: 33.3%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#coldCoffee {
+  height: 200px;
+  width: 200px;
+  border: 3px solid #eaedee;
+  border-radius: 20px;
+}
+#hotCoffee {
+  height: 200px;
+  width: 200px;
+  border: 3px solid #eaedee;
+  border-radius: 20px;
 }
