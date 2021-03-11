@@ -2,3 +2,15 @@
 	padding: 0px;
 	margin: 0px;
 }
+
+body {
+	font-family: "IBM Plex Sans", sans-serif;
+}
+
+p {
+	font-weight: 400;
+}
+
+h1 {
+	font-weight: 700;
+}
