@@ -92,11 +92,10 @@ li a:active {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
 }
 #coldCoffee {
-  height: 250px;
-  width: calc(20% - 75px);
+  height: 30vh;
+  width: 15vw;
   margin-left: 55px;
   margin-right: 25px;
   margin-bottom: 10px;
@@ -109,8 +108,8 @@ li a:active {
   flex-direction: column;
 }
 #hotCoffee {
-  height: 250px;
-  width: calc(20% - 75px);
+  height: 30vh;
+  width: 15vw;
   margin-left: 55px;
   margin-right: 25px;
   margin-bottom: 10px;
@@ -123,8 +122,8 @@ li a:active {
   flex-direction: column;
 }
 #food {
-  height: 250px;
-  width: calc(20% - 75px);
+  height: 30vh;
+  width: 15vw;
   margin-left: 55px;
   margin-right: 25px;
   margin-bottom: 10px;
@@ -148,17 +147,22 @@ li a:active {
   text-align: center;
 }
 
-p {
+#priceAndCalories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .productPrice {
   color: #fdb91b;
-  margin-left: 50px;
+  padding: 5px;
+  margin: 5px;
 }
 
 .productCalories {
   border-left: 1px solid black;
   padding: 5px;
+  margin: 5px;
 }
 
 footer {
