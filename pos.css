@@ -1,97 +1,107 @@
 * {
-  padding: 0px;
-  margin: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+
+#page-container {
+	position: relative;
+	min-height: 100vh;
+}
+
+#content-wrap {
+	padding-bottom: 40px; /* Footer height */
 }
 
 body {
-  font-family: "IBM Plex Sans", sans-serif;
+	font-family: "IBM Plex Sans", sans-serif;
 }
 
 p {
-  font-weight: 400;
+	font-weight: 400;
 }
 
 h1 {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 0 10px;
-  border-bottom: 2px solid #eaedee;
-  margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 0 10px;
+	border-bottom: 2px solid #eaedee;
+	margin-bottom: 20px;
 }
 
 ul {
-  list-style-type: none;
-  display: flex;
-  padding-right: 30px;
+	list-style-type: none;
+	display: flex;
+	padding-right: 30px;
 }
 
 li {
-  margin: 0 10px;
+	margin: 0 10px;
 }
 
 li a {
-  text-decoration: none;
-  color: black;
+	text-decoration: none;
+	color: black;
 }
 
 li a:hover {
-  color: #fdb91b;
+	color: #fdb91b;
 }
 
 li a:active {
-  text-decoration: none;
-  color: #2d2a24;
+	text-decoration: none;
+	color: #2d2a24;
 }
 
 #logo {
-  max-width: 200px;
+	max-width: 200px;
 }
 
 /*Product cards styling */
 
 #productCards {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 30px;
 }
 #coldCoffee {
-  height: 250px;
-  width: calc(20% - 75px);
-  margin-left: 55px;
-  margin-right: 25px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  border: 3px solid #eaedee;
-  border-radius: 20px;
+	height: 250px;
+	width: calc(20% - 75px);
+	margin-left: 55px;
+	margin-right: 25px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border: 3px solid #eaedee;
+	border-radius: 20px;
 }
 #hotCoffee {
-  height: 250px;
-  width: calc(20% - 75px);
-  margin-left: 55px;
-  margin-right: 25px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  border: 3px solid #eaedee;
-  border-radius: 20px;
+	height: 250px;
+	width: calc(20% - 75px);
+	margin-left: 55px;
+	margin-right: 25px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border: 3px solid #eaedee;
+	border-radius: 20px;
 }
 #snacks {
-  height: 250px;
-  width: calc(20% - 75px);
-  margin-left: 55px;
-  margin-right: 25px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  border: 3px solid #eaedee;
-  border-radius: 20px;
+	height: 250px;
+	width: calc(20% - 75px);
+	margin-left: 55px;
+	margin-right: 25px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border: 3px solid #eaedee;
+	border-radius: 20px;
 }
 
 footer {
