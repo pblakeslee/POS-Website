@@ -133,6 +133,30 @@ li a:active {
   border-radius: 20px;
 }
 
+/*Product Card information*/
+
+.productName {
+  position: relative;
+  top: 150px;
+  left: 40px;
+}
+
+p {
+  display: inline;
+  position: relative;
+  top: 160px;
+  left: 60px;
+  margin-right: 10px;
+}
+
+.productPrice {
+  color: #fdb91b;
+}
+
+.productCalories {
+  border-left: 1px solid black;
+}
+
 footer {
   display: flex;
   align-items: center;
