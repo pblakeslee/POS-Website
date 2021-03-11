@@ -3,6 +3,15 @@
   margin: 0px;
 }
 
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 40px; /* Footer height */
+}
+
 body {
   font-family: "IBM Plex Sans", sans-serif;
 }
@@ -101,6 +110,7 @@ li a:active {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 #coldCoffee {
   height: 250px;
@@ -111,6 +121,10 @@ li a:active {
   margin-top: 10px;
   border: 3px solid #eaedee;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #hotCoffee {
   height: 250px;
@@ -121,6 +135,10 @@ li a:active {
   margin-top: 10px;
   border: 3px solid #eaedee;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #food {
   height: 250px;
@@ -131,25 +149,29 @@ li a:active {
   margin-top: 10px;
   border: 3px solid #eaedee;
   border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 /*Product Card information*/
 
+#productImage {
+  width: 150px;
+  height: 150px;
+}
+
 .productName {
-  position: absolute;
-  top: calc(25%);
+  text-align: center;
 }
 
 p {
-  display: inline;
-  position: relative;
-  top: 65%;
-  left: 30%;
-  margin-right: 10px;
 }
 
 .productPrice {
   color: #fdb91b;
+  margin-left: 50px;
 }
 
 .productCalories {
