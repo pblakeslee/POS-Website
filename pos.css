@@ -1,4 +1,41 @@
 * {
-	padding: 0px;
-	margin: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Everything below this is the stylesheet for the products page */
+
+.back-button-link:link,
+.back-button-link:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+.back-button-link:hover {
+  text-decoration: underline;
+  color: #fdb91b;
+}
+
+.product-container {
+  border: 3px solid #fdb91b;
+  border-radius: 1em;
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
+.lower-buttons {
+  position: absolute;
+  top: 450px;
+  left: 50%;
+  display: flex;
+}
+
+@media (max-width: 768px) {
 }
