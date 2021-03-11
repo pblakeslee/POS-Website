@@ -6,32 +6,48 @@
 #productCards {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: 33.3%;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 #coldCoffee {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: calc(20% - 75px);
+  margin-left: 55px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   border: 3px solid #eaedee;
   border-radius: 20px;
 }
 #hotCoffee {
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: calc(20% - 75px);
+  margin-left: 55px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
   border: 3px solid #eaedee;
   border-radius: 20px;
 }
-
+#snacks {
+  height: 250px;
+  width: calc(20% - 75px);
+  margin-left: 55px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 3px solid #eaedee;
+  border-radius: 20px;
+}
 body {
-	font-family: "IBM Plex Sans", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 p {
-	font-weight: 400;
+  font-weight: 400;
 }
 
 h1 {
-	font-weight: 700;
+  font-weight: 700;
 }
