@@ -23,18 +23,27 @@ body {
 .product-container {
   border: 3px solid #fdb91b;
   border-radius: 1em;
+  height: ;
   width: 75%;
   position: absolute;
-  top: 50%;
+  top: 400px;
   left: 50%;
   transform: translate(-50%, -75%);
+  display: flex;
+}
+
+.info-layout {
+  padding: 1em;
+}
+
+.info-layout h2,
+.info-layout p {
+  padding-bottom: 0.5em;
 }
 
 .lower-buttons {
-  position: absolute;
-  top: 450px;
-  left: 50%;
   display: flex;
+  align-items: flex-end;
 }
 
 @media (max-width: 768px) {
