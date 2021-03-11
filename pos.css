@@ -136,16 +136,15 @@ li a:active {
 /*Product Card information*/
 
 .productName {
-  position: relative;
-  top: 150px;
-  left: 40px;
+  position: absolute;
+  top: calc(25%);
 }
 
 p {
   display: inline;
   position: relative;
-  top: 160px;
-  left: 60px;
+  top: 65%;
+  left: 30%;
   margin-right: 10px;
 }
 
@@ -155,6 +154,7 @@ p {
 
 .productCalories {
   border-left: 1px solid black;
+  padding: 5px;
 }
 
 footer {
