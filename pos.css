@@ -20,10 +20,15 @@ body {
   color: #fdb91b;
 }
 
+.back-button {
+  position: absolute;
+  top: -2.5em;
+  left: -0.5em;
+}
+
 .product-container {
   border: 3px solid #fdb91b;
   border-radius: 1em;
-  height: ;
   width: 75%;
   position: absolute;
   top: 400px;
@@ -41,9 +46,17 @@ body {
   padding-bottom: 0.5em;
 }
 
-.lower-buttons {
+.lower-buttons .add-minus {
   display: flex;
-  align-items: flex-end;
+  position: absolute;
+  bottom: -2em;
+  left: 1em;
+}
+
+.lower-buttons .add-cart {
+  position: absolute;
+  bottom: -2em;
+  right: 1em;
 }
 
 @media (max-width: 768px) {
