@@ -63,6 +63,15 @@ li a:active {
 	max-width: 200px;
 }
 
+/*Product top buttons*/
+
+#productTop {
+	border: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
 /*Product cards styling */
 
 #productCards {
@@ -93,7 +102,7 @@ li a:active {
 	border: 3px solid #eaedee;
 	border-radius: 20px;
 }
-#snacks {
+#food {
 	height: 250px;
 	width: calc(20% - 75px);
 	margin-left: 55px;

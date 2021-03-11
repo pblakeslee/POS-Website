@@ -20,37 +20,43 @@
   <div id="page-container">
     <div id="content-wrap">
       <!-- all other page content -->
-	<header>
-		<img
-			id="logo"
-			src="assets/SVG/decafPandaLogo.svg"
-			alt="Decaffeinated Panda Logo"
-		/>
-		<nav>
-			<ul id="menu">
-				<li><a href="pos.html">MENU</a></li>
-				<li>
-					<!-- Have to link cart HTML once completed -->
-					<a href="#"
-						><i class="fas fa-shopping-cart"></i
-					></a>
-				</li>
-			</ul>
-		</nav>
-	</header>
-	<body>
-		<div id="productCards">
-			<div id="coldCoffee" class="c1"></div>
-			<div id="coldCoffee" class="c2"></div>
-			<div id="coldCoffee" class="c3"></div>
-			<div id="coldCoffee" class="c4"></div>
-			<div id="hotCoffee" class="h1"></div>
-			<div id="hotCoffee" class="h2"></div>
-			<div id="hotCoffee" class="h3"></div>
-			<div id="hotCoffee" class="h4"></div>
-			<div id="snacks" class="s1"></div>
-			<div id="snacks" class="s2"></div>
-		</div>
+      <header>
+        <img
+          id="logo"
+          src="assets/SVG/decafPandaLogo.svg"
+          alt="Decaffeinated Panda Logo"
+        />
+        <nav>
+          <ul id="menu">
+            <li><a href="pos.html">MENU</a></li>
+            <li>
+              <!-- Have to link cart HTML once completed -->
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <body>
+        <header id="productTop">
+          <h2>MENU</h2>
+          <div id="productButtons">
+            <button id="snacks">Snacks</button>
+            <button id="coldDrinks">Cold Drinks</button>
+            <button id="hotDrinks">Hot Drinks</button>
+          </div>
+        </header>
+        <div id="productCards">
+          <div id="coldCoffee" class="cold"></div>
+          <div id="coldCoffee" class="cold"></div>
+          <div id="coldCoffee" class="cold"></div>
+          <div id="coldCoffee" class="cold"></div>
+          <div id="hotCoffee" class="hot"></div>
+          <div id="hotCoffee" class="hot"></div>
+          <div id="hotCoffee" class="hot"></div>
+          <div id="hotCoffee" class="hot"></div>
+          <div id="food" class="snack"></div>
+          <div id="food" class="snack"></div>
+        </div>
 </div>
 		<!-- Starting Footer. Put all other code above this line. -->
 		<footer>
@@ -61,5 +67,6 @@
     </footer>
   </div>
 		<script src="pos.js"></script>
-	</body>
-</html>
+  </body>
+  </html>
+  
