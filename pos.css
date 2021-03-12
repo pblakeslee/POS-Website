@@ -16,7 +16,9 @@
 body {
 	font-family: "IBM Plex Sans", sans-serif;
 }
-
+button {
+	font-family: "IBM Plex Sans", sans-serif;
+}
 p {
 	font-weight: 400;
 }
@@ -212,7 +214,7 @@ footer {
 	border: none;
 	color: rgb(255, 0, 0);
 	text-decoration: underline;
-	padding-right: 10px;
+	padding: 0px 30px 0 20px;
 }
 
 #cartContainer {
@@ -220,6 +222,7 @@ footer {
 	flex-direction: column;
 	align-items: flex-start;
 	width: 750px;
+	margin-bottom: 30px;
 }
 
 #cartBody {
@@ -243,4 +246,28 @@ footer {
 	width: 32px;
 }
 
+#subtotalContainer {
+	background-color: #fdb91b;
+	border-radius: 12px;
+	border: none;
+	height: 40px;
+}
+
+.checkout {
+	background-color: #2d2a24;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 50px;
+	border-style: none;
+}
+
+#itemQty {
+	width: 100px;
+	text-align: center;
+}
+
+#subtotalContainer h2 {
+	width: 402px;
+	text-align: left;
+}
 /* CART PAGE STYLING ENDS */
