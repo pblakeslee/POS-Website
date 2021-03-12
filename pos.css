@@ -49,14 +49,34 @@ body {
 .lower-buttons .add-minus {
   display: flex;
   position: absolute;
-  bottom: -2em;
+  bottom: -2.5em;
   left: 1em;
+}
+
+.add-minus #minus-quantity,
+.add-minus #add-quantity {
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  color: #f2f2f2;
+  background-color: #2d2a24;
+  border: 1px solid #2d2a24;
 }
 
 .lower-buttons .add-cart {
   position: absolute;
-  bottom: -2em;
+  bottom: -2.5em;
   right: 1em;
+}
+
+#add-to-cart {
+  color: #f2f2f2;
+  background-color: #2d2a24;
+  border-radius: 1em;
+  height: 2em;
+  width: 10em;
+  border: 1px solid #2d2a24;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
