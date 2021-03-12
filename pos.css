@@ -75,6 +75,7 @@ li a:active {
 #snacks,
 #hotDrinks,
 #coldDrinks {
+  cursor: pointer;
   margin-left: 10px;
   margin-right: 10px;
   font-size: 20px;
@@ -82,6 +83,23 @@ li a:active {
   height: 50px;
   border-radius: 50px;
   border: none;
+}
+
+/*Button hover effects jsut becasue I feel like being fancy - Ami*/
+
+#snacks:hover {
+  background-color: #fdb91b;
+  color: white;
+}
+
+#coldDrinks:hover {
+  background-color: #fdb91b;
+  color: white;
+}
+
+#hotDrinks:hover {
+  background-color: #fdb91b;
+  color: white;
 }
 
 /*Product cards styling */
@@ -93,9 +111,10 @@ li a:active {
   justify-content: center;
   align-items: center;
 }
+
 #coldCoffee {
   height: 30vh;
-  width: 15vw;
+  width: 22vw;
   margin-left: 55px;
   margin-right: 25px;
   margin-bottom: 10px;
@@ -109,7 +128,7 @@ li a:active {
 }
 #hotCoffee {
   height: 30vh;
-  width: 15vw;
+  width: 22vw;
   margin-left: 55px;
   margin-right: 25px;
   margin-bottom: 10px;
@@ -123,7 +142,7 @@ li a:active {
 }
 #food {
   height: 30vh;
-  width: 15vw;
+  width: 22vw;
   margin-left: 55px;
   margin-right: 25px;
   margin-bottom: 10px;
@@ -134,6 +153,18 @@ li a:active {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+#coldCoffee:hover {
+  border-color: #fdb91b;
+}
+
+#hotCoffee:hover {
+  border-color: #fdb91b;
+}
+
+#food:hover {
+  border-color: #fdb91b;
 }
 
 /*Product Card information*/
