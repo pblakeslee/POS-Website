@@ -1,131 +1,183 @@
 * {
-	padding: 0px;
-	margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 #page-container {
-	position: relative;
-	min-height: 100vh;
+  position: relative;
+  min-height: 100vh;
 }
 
 #content-wrap {
-	padding-bottom: 40px; /* Footer height */
+  padding-bottom: 40px; /* Footer height */
 }
 
 body {
-	font-family: "IBM Plex Sans", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 
 p {
-	font-weight: 400;
+  font-weight: 400;
 }
 
 h1 {
-	font-weight: 700;
+  font-weight: 700;
 }
 
 header {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-	padding: 0 10px;
-	border-bottom: 2px solid #eaedee;
-	margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 10px;
+  border-bottom: 2px solid #eaedee;
+  margin-bottom: 20px;
 }
 
 ul {
-	list-style-type: none;
-	display: flex;
-	padding-right: 30px;
+  list-style-type: none;
+  display: flex;
+  padding-right: 30px;
 }
 
 li {
-	margin: 0 10px;
+  margin: 0 10px;
 }
 
 li a {
-	text-decoration: none;
-	color: black;
+  text-decoration: none;
+  color: black;
 }
 
 li a:hover {
-	color: #fdb91b;
+  color: #fdb91b;
 }
 
 li a:active {
-	text-decoration: none;
-	color: #2d2a24;
+  text-decoration: none;
+  color: #2d2a24;
 }
 
 #logo {
-	max-width: 200px;
+  max-width: 200px;
 }
 
 /*Product top buttons*/
 
 #productTop {
-	border: none;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+  border: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#snacks,
+#hotDrinks,
+#coldDrinks {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
 }
 
 /*Product cards styling */
 
 #productCards {
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 #coldCoffee {
-	height: 250px;
-	width: calc(20% - 75px);
-	margin-left: 55px;
-	margin-right: 25px;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	border: 3px solid #eaedee;
-	border-radius: 20px;
+  height: 30vh;
+  width: 15vw;
+  margin-left: 55px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 3px solid #eaedee;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #hotCoffee {
-	height: 250px;
-	width: calc(20% - 75px);
-	margin-left: 55px;
-	margin-right: 25px;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	border: 3px solid #eaedee;
-	border-radius: 20px;
+  height: 30vh;
+  width: 15vw;
+  margin-left: 55px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 3px solid #eaedee;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 #food {
-	height: 250px;
-	width: calc(20% - 75px);
-	margin-left: 55px;
-	margin-right: 25px;
-	margin-bottom: 10px;
-	margin-top: 10px;
-	border: 3px solid #eaedee;
-	border-radius: 20px;
+  height: 30vh;
+  width: 15vw;
+  margin-left: 55px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 3px solid #eaedee;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*Product Card information*/
+
+#productImage {
+  width: 150px;
+  height: 150px;
+}
+
+.productName {
+  text-align: center;
+}
+
+#priceAndCalories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productPrice {
+  color: #fdb91b;
+  padding: 5px;
+  margin: 5px;
+}
+
+.productCalories {
+  border-left: 1px solid black;
+  padding: 5px;
+  margin: 5px;
 }
 
 footer {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #2d2a24;
-	height: 40px;
-	width: 100%;
-	position: absolute;
-	bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2d2a24;
+  height: 40px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
 }
 
 #copyright {
-	color: white;
-	font-weight: 1;
-	font-size: 13px;
+  color: white;
+  font-weight: 1;
+  font-size: 13px;
 }

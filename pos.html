@@ -1,72 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<title>Decaffeinated Panda</title>
-		<link
-			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="pos.css" />
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
-		/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decaffeinated Panda</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="pos.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+    />
   </head>
-  <div id="page-container">
-    <div id="content-wrap">
-      <!-- all other page content -->
-      <header>
+
+  <header>
+    <img
+      id="logo"
+      src="assets/SVG/decafPandaLogo.svg"
+      alt="Decaffeinated Panda Logo"
+    />
+    <nav>
+      <ul id="menu">
+        <li><a href="pos.html">MENU</a></li>
+        <li>
+          <!-- Have to link cart HTML once completed -->
+          <a href="#"><i class="fas fa-shopping-cart"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- all other page content -->
+  <body>
+    <!--Product cards and filter buttons-->
+    <header id="productTop">
+      <h1>MENU</h1>
+      <div id="productButtons">
+        <button id="snacks">Snacks</button>
+        <button id="coldDrinks">Cold Drinks</button>
+        <button id="hotDrinks">Hot Drinks</button>
+      </div>
+    </header>
+    <div id="productCards">
+      <div id="coldCoffee" class="cold">
         <img
-          id="logo"
-          src="assets/SVG/decafPandaLogo.svg"
-          alt="Decaffeinated Panda Logo"
+          id="productImage"
+          src="assets/PNG/lavendarMocha.png"
+          alt="Blended Lavender Mocha"
         />
-        <nav>
-          <ul id="menu">
-            <li><a href="pos.html">MENU</a></li>
-            <li>
-              <!-- Have to link cart HTML once completed -->
-              <a href="#"><i class="fas fa-shopping-cart"></i></a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <body>
-        <header id="productTop">
-          <h2>MENU</h2>
-          <div id="productButtons">
-            <button id="snacks">Snacks</button>
-            <button id="coldDrinks">Cold Drinks</button>
-            <button id="hotDrinks">Hot Drinks</button>
-          </div>
-        </header>
-        <div id="productCards">
-          <div id="coldCoffee" class="cold"></div>
-          <div id="coldCoffee" class="cold"></div>
-          <div id="coldCoffee" class="cold"></div>
-          <div id="coldCoffee" class="cold"></div>
-          <div id="hotCoffee" class="hot"></div>
-          <div id="hotCoffee" class="hot"></div>
-          <div id="hotCoffee" class="hot"></div>
-          <div id="hotCoffee" class="hot"></div>
-          <div id="food" class="snack"></div>
-          <div id="food" class="snack"></div>
+        <h2 class="productName">Blended Lavender Mocha</h2>
+        <div id="priceAndCalories">
+          <p class="productPrice">$4.99</p>
+          <p class="productCalories">380 Cal</p>
         </div>
-</div>
-		<!-- Starting Footer. Put all other code above this line. -->
-		<footer>
-			<p id="copyright">
-				©2021 Grand Circus. All Rights Reserved. Decaffeinated
-				Panda is a registered trademark of Grand Circus.
-			</p>
-    </footer>
-  </div>
-		<script src="pos.js"></script>
+      </div>
+      <div id="coldCoffee" class="cold">
+        <img
+          id="productImage"
+          src="assets/PNG/brownSugar.png"
+          alt="Brown Sugar Maple Cinnamon Latte"
+        />
+        <h2 class="productName">Brown Sugar Maple Cinnamon Latte</h2>
+        <div id="priceAndCalories">
+          <p class="productPrice">$3.80</p>
+          <p class="productCalories">560 Cal</p>
+        </div>
+      </div>
+      <div id="coldCoffee" class="cold">
+        <img
+          id="productImage"
+          src="assets/PNG/coldBrew.png"
+          alt="Classic Cold Brew"
+        />
+        <h2 class="productName">Classic Cold Brew</h2>
+        <div id="priceAndCalories">
+          <p class="productPrice">$3.00</p>
+          <p class="productCalories">5 Cal</p>
+        </div>
+      </div>
+      <div id="coldCoffee" class="cold">
+        <img
+          id="productImage"
+          src="assets/PNG/saltedCaramel.png"
+          alt="Iced Salted Caramel Macchiato"
+        />
+        <h2 class="productName">Iced Salted Caramel Macchiato</h2>
+        <div id="priceAndCalories">
+          <p class="productPrice">$4.20</p>
+          <p class="productCalories">120 Cal</p>
+        </div>
+      </div>
+      <div id="hotCoffee" class="hot">
+        <img
+          id="productImage"
+          src="assets/PNG/dripCoffee.png"
+          alt="Drip Coffee"
+        />
+        <h2 class="productName">Drip Coffee</h2>
+        <div id="priceAndCalories">
+          <p class="productPrice">$2.70</p>
+          <p class="productCalories">20 Cal</p>
+        </div>
+      </div>
+      <div id="hotCoffee" class="hot">
+        <img
+          id="productImage"
+          src="assets/PNG/hotChocolate.png"
+          alt="Hot Chocolate"
+        />
+        <h2 class="productName">Hot Chocolate</h2>
+        <div id="priceAndCalories">
+          <p class="productPrice">$3.29</p>
+          <p class="productCalories">370 Cal</p>
+        </div>
+      </div>
+      <div id="hotCoffee" class="hot">
+        <img
+          id="productImage"
+          src="assets/PNG/blondeVanilla.png"
+          alt="Blonde Vanilla Latte"
+        />
+        <h2 class="productName">Blonde Vanilla Latte</h2>
+        <div id="priceAndCalories">
+          <p class="productPrice">$4.99</p>
+          <p class="productCalories">510 Cal.</p>
+        </div>
+      </div>
+      <div id="hotCoffee" class="hot">
+        <img
+          id="productImage"
+          src="assets/PNG/darkChocolate.png"
+          alt="Dark Chocolate Mocha"
+        />
+        <h2 class="productName">Dark Chocolate Mocha</h2>
+        <div id="priceAndCalories">
+          <p class="productPrice">$3.80</p>
+          <p class="productCalories">430 Cal</p>
+        </div>
+      </div>
+      <div id="food" class="snack">
+        <img
+          id="productImage"
+          src="assets/PNG/bananaLoaf.png"
+          alt="Banana Nut Loaf"
+        />
+        <h2 class="productName">Banana Nut Loaf</h2>
+        <div id="priceAndCalories">
+          <p class="productPrice">$1.99</p>
+          <p class="productCalories">420 Cal</p>
+        </div>
+      </div>
+      <div id="food" class="snack">
+        <img
+          id="productImage"
+          src="assets/PNG/avocado.png"
+          alt="Avocado Toast"
+        />
+        <h2 class="productName">Avocado Toast</h2>
+        <div id="priceAndCalories">
+          <p class="productPrice">$4.49</p>
+          <p class="productCalories">480 Cal</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="page-container">
+      <div id="content-wrap">
+        <!-- Starting Footer. Put all other code above this line. -->
+        <footer>
+          <p id="copyright">
+            ©2021 Grand Circus. All Rights Reserved. Decaffeinated Panda is a
+            registered trademark of Grand Circus.
+          </p>
+        </footer>
+      </div>
+    </div>
+    <script src="pos.js"></script>
   </body>
-  </html>
-  
+</html>
