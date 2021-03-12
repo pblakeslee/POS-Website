@@ -72,9 +72,7 @@ li a:active {
   align-items: center;
 }
 
-#snacks,
-#hotDrinks,
-#coldDrinks {
+.filterButton {
   cursor: pointer;
   margin-left: 10px;
   margin-right: 10px;
@@ -87,19 +85,13 @@ li a:active {
 
 /*Button hover effects jsut becasue I feel like being fancy - Ami*/
 
-#snacks:hover {
+.filterButton:hover {
   background-color: #fdb91b;
   color: white;
 }
 
-#coldDrinks:hover {
-  background-color: #fdb91b;
-  color: white;
-}
-
-#hotDrinks:hover {
-  background-color: #fdb91b;
-  color: white;
+.filterButton:focus {
+  outline: none;
 }
 
 /*Product cards styling */
@@ -112,7 +104,7 @@ li a:active {
   align-items: center;
 }
 
-#coldCoffee {
+.productCard {
   height: 30vh;
   width: 22vw;
   margin-left: 55px;
@@ -125,48 +117,13 @@ li a:active {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-#hotCoffee {
-  height: 30vh;
-  width: 22vw;
-  margin-left: 55px;
-  margin-right: 25px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  border: 3px solid #eaedee;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-#food {
-  height: 30vh;
-  width: 22vw;
-  margin-left: 55px;
-  margin-right: 25px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  border: 3px solid #eaedee;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
 }
 
-#coldCoffee:hover {
+.productCard:hover {
   border-color: #fdb91b;
 }
-
-#hotCoffee:hover {
-  border-color: #fdb91b;
-}
-
-#food:hover {
-  border-color: #fdb91b;
-}
-
 /*Product Card information*/
 
 #productImage {
