@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Cart</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="pos.css" />
+		<link
+			rel="stylesheet"
+			href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"
+		/>
+    </head>
+    <div id="page-container">
+        <div id="content-wrap">
+        <!-- all other page content -->
+	    <header>
+		    <img
+			id="logo"
+			src="assets/SVG/decafPandaLogo.svg"
+            alt="Decaffeinated Panda Logo"
+		    />
+		    <nav>
+			    <ul id="menu">
+				    <li><a href="pos.html">MENU</a></li>
+				    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+			    </ul>
+		    </nav>
+	    </header>
+	    <body>
+            <div id="cartBody">
+                <div id="cartContainer">
+                    <h1>CART</h1>
+
+                    <!-- Item 1 -->
+                    <div class="cartItem" id="lavendarMocha">
+                        <img
+					    class="cartProductImage"
+					    src="assets/PNG/lavendarMocha.png"
+					    alt="Blended Lavender Mocha"/>
+                            <div class="nameAndQty">
+                                <h2 class="productName">Blended Lavender Mocha</h2>
+                                <div class="quantityContainer">
+                                    <label for="quantity">QTY:</label>
+                                    <input type="number" id="quantity" name="quantity" min="1">
+                                </div>
+                            </div>
+                        <p>$4.99</p>
+                        <button class="remove">REMOVE</button>
+                    </div>
+                    <!-- End Item 1 -->
+
+                    <!-- Item 2 -->
+                    <div class="cartItem" id="brownSugar">
+                        <img
+					    class="cartProductImage"
+					    src="assets/PNG/brownSugar.png"
+					    alt="Brown Sugar Maple Cinnamon Latte"/>
+                            <div class="nameAndQty">
+                                <h2 class="productName">Brown Sugar Maple Cinnamon Latte</h2>
+                                <div class="quantityContainer">
+                                    <label for="quantity">QTY:</label>
+                                    <input type="number" id="quantity" name="quantity" min="1">
+                                </div>
+                            </div>
+                        <p>$3.80</p>
+                        <button class="remove">REMOVE</button>
+                    </div>
+                    <!-- End Item 2 -->
+
+                    <!-- Item 3 -->
+                    <div class="cartItem" id="coldBrew">
+                        <img
+					    class="cartProductImage"
+					    src="assets/PNG/coldBrew.png"
+					    alt="Classic Cold Brew"/>
+                            <div class="nameAndQty">
+                                <h2 class="productName">Classic Cold Brew</h2>
+                                <div class="quantityContainer">
+                                
+                                        <label for="quantity">QTY:</label>
+                                        <input type="number" id="quantity" name="quantity" min="1">
+                                
+                                </div>
+                            </div>
+                        <p>$3.00</p>
+                        <button class="remove">REMOVE</button>
+                    </div>
+                    <!-- End Item 3 -->
+
+                    <!-- Item 4 -->
+                    <div class="cartItem" id="saltedCaramel">
+                        <img
+					    class="cartProductImage"
+					    src="assets/PNG/saltedCaramel.png"
+					    alt="Iced Salted Caramel Macchiato"/>
+                            <div class="nameAndQty">
+                                <h2 class="productName">Iced Salted Caramel Macchiato</h2>
+                                <div class="quantityContainer">
+                                    <label for="quantity">QTY:</label>
+                                    <input type="number" id="quantity" name="quantity" min="1">
+                                </div>
+                            </div>
+                        <p>$4.20</p>
+                        <button class="remove">REMOVE</button>
+                    </div>
+                    <!-- End Item 4 -->
+
+                    <!-- Item 5 -->
+                    <div class="cartItem" id="dripCoffee">
+                        <img
+					    class="cartProductImage"
+					    src="assets/PNG/dripCoffee.png"
+					    alt="Drip Coffee"/>
+                            <div class="nameAndQty">
+                                <h2 class="productName">Drip Coffee</h2>
+                                <div class="quantityContainer">
+                                    <label for="quantity">QTY:</label>
+                                    <input type="number" id="quantity" name="quantity" min="1">
+                                </div>
+                            </div>
+                        <p>$2.70</p>
+                        <button class="remove">REMOVE</button>
+                    </div>
+                    <!-- End Item 5 -->
+
+                    <!-- Item 6 -->
+                    <div class="cartItem" id="hotChocolate">
+                        <img
+					    class="cartProductImage"
+					    src="assets/PNG/hotChocolate.png"
+					    alt="Hot Chocolate"/>
+                            <div class="nameAndQty">
+                                <h2 class="productName">Hot Chocolate</h2>
+                                <div class="quantityContainer">
+                                    <label for="quantity">QTY:</label>
+                                    <input type="number" id="quantity" name="quantity" min="1">
+                                </div>
+                            </div>
+                        <p>$3.29</p>
+                        <button class="remove">REMOVE</button>
+                    </div>
+                    <!-- End Item 6 -->
+
+                    <!-- Item 7 -->
+                    <div class="cartItem" id="blondeVanilla">
+                        <img
+					    class="cartProductImage"
+					    src="assets/PNG/blondeVanilla.png"
+					    alt="Blonde Vanilla Latte"/>
+                            <div class="nameAndQty">
+                                <h2 class="productName">Blonde Vanilla Latte</h2>
+                                <div class="quantityContainer">
+                                    <label for="quantity">QTY:</label>
+                                    <input type="number" id="quantity" name="quantity" min="1">
+                                </div>
+                            </div>
+                        <p>$4.99</p>
+                        <button class="remove">REMOVE</button>
+                    </div>
+                    <!-- End Item 7 -->
+
+                    <!-- Item 8 -->
+                    <div class="cartItem" id="darkChocolate">
+                        <img
+					    class="cartProductImage"
+					    src="assets/PNG/darkChocolate.png"
+					    alt="Dark Chocolate Mocha"/>
+                            <div class="nameAndQty">
+                                <h2 class="productName">Dark Chocolate Mocha</h2>
+                                <div class="quantityContainer">
+                                    <label for="quantity">QTY:</label>
+                                    <input type="number" id="quantity" name="quantity" min="1">
+                                </div>
+                            </div>
+                        <p>$3.80</p>
+                        <button class="remove">REMOVE</button>
+                    </div>
+                    <!-- End Item 8 -->
+
+                    <!-- Item 9 -->
+                    <div class="cartItem" id="bananaLoaf">
+                        <img
+					    class="cartProductImage"
+					    src="assets/PNG/bananaLoaf.png"
+					    alt="Banana Nut Loaf"/>
+                            <div class="nameAndQty">
+                                <h2 class="productName">Banana Nut Loaf</h2>
+                                <div class="quantityContainer">
+                                    <label for="quantity">QTY:</label>
+                                    <input type="number" id="quantity" name="quantity" min="1">
+                                </div>
+                            </div>
+                        <p>$1.99</p>
+                        <button class="remove">REMOVE</button>
+                    </div>
+                    <!-- End Item 9 -->
+
+                    <!-- Item 10 -->
+                    <div class="cartItem" id="avocado">
+                        <img
+					    class="cartProductImage"
+					    src="assets/PNG/avocado.png"
+					    alt="Avocado Toast"/>
+                            <div class="nameAndQty">
+                                <h2 class="productName">Avocado Toast</h2>
+                                <div class="quantityContainer">
+                                    <label for="quantity">QTY:</label>
+                                    <input type="number" id="quantity" name="quantity" min="1">
+                                </div>
+                            </div>
+                        <p>$4.49</p>
+                        <button class="remove">REMOVE</button>
+                    </div>
+                    <!-- End Item 10 -->
+
+                    <!-- Start Subtotal Container -->
+                    <div class="cartItem" id="subtotalContainer">
+                        <p id="itemQty">10 items</p>
+                        <h2>Subtotal</h2>
+                        <p>$XX.XX</p>
+                        <button class="checkout">CHECKOUT</button>
+                    </div>
+                    <!-- End Subtotal Container -->
+                    
+                </div> <!-- End Cart Container -->
+
+            
+                
+
+            </div>
+        	<!-- Starting Footer. Put all other code above this line. -->
+            <footer>
+                <p id="copyright">
+                ©2021 Grand Circus. All Rights Reserved.
+                Decaffeinated Panda is a registered
+                trademark of Grand Circus.
+                </p>
+            </footer>
+        </div> <!-- End of Content Wrap -->
+    </div> <!-- End of Page Container -->
+<script src="pos.js"></script>
+    </body>
+</html>

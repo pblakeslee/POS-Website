@@ -1,183 +1,281 @@
 * {
-  padding: 0px;
-  margin: 0px;
+	padding: 0px;
+	margin: 0px;
 }
 
 #page-container {
-  position: relative;
-  min-height: 100vh;
+	position: relative;
+	min-height: 100vh;
+	width: 100vw;
 }
 
 #content-wrap {
-  padding-bottom: 40px; /* Footer height */
+	padding-bottom: 40px; /* Footer height */
 }
 
 body {
-  font-family: "IBM Plex Sans", sans-serif;
+	font-family: "IBM Plex Sans", sans-serif;
 }
-
+button {
+	font-family: "IBM Plex Sans", sans-serif;
+}
 p {
-  font-weight: 400;
+	font-weight: 400;
 }
 
 h1 {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 0 10px;
-  border-bottom: 2px solid #eaedee;
-  margin-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	padding: 0 10px;
+	border-bottom: 2px solid #eaedee;
+	margin-bottom: 20px;
 }
 
 ul {
-  list-style-type: none;
-  display: flex;
-  padding-right: 30px;
+	list-style-type: none;
+	display: flex;
+	padding-right: 30px;
 }
 
 li {
-  margin: 0 10px;
+	margin: 0 10px;
 }
 
 li a {
-  text-decoration: none;
-  color: black;
+	text-decoration: none;
+	color: black;
 }
 
 li a:hover {
-  color: #fdb91b;
+	color: #fdb91b;
 }
 
 li a:active {
-  text-decoration: none;
-  color: #2d2a24;
+	text-decoration: none;
+	color: #2d2a24;
 }
 
 #logo {
-  max-width: 200px;
+	max-width: 200px;
 }
 
 /*Product top buttons*/
 
 #productTop {
-  border: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+	border: none;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 }
 
 #snacks,
 #hotDrinks,
 #coldDrinks {
-  margin-left: 10px;
-  margin-right: 10px;
-  font-size: 20px;
-  width: 150px;
-  height: 50px;
-  border-radius: 50px;
-  border: none;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 20px;
+	width: 150px;
+	height: 50px;
+	border-radius: 50px;
+	border: none;
 }
 
 /*Product cards styling */
 
 #productCards {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 #coldCoffee {
-  height: 30vh;
-  width: 15vw;
-  margin-left: 55px;
-  margin-right: 25px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  border: 3px solid #eaedee;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+	height: 30vh;
+	width: 15vw;
+	margin-left: 55px;
+	margin-right: 25px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border: 3px solid #eaedee;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 #hotCoffee {
-  height: 30vh;
-  width: 15vw;
-  margin-left: 55px;
-  margin-right: 25px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  border: 3px solid #eaedee;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+	height: 30vh;
+	width: 15vw;
+	margin-left: 55px;
+	margin-right: 25px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border: 3px solid #eaedee;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 #food {
-  height: 30vh;
-  width: 15vw;
-  margin-left: 55px;
-  margin-right: 25px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  border: 3px solid #eaedee;
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+	height: 30vh;
+	width: 15vw;
+	margin-left: 55px;
+	margin-right: 25px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border: 3px solid #eaedee;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 /*Product Card information*/
 
 #productImage {
-  width: 150px;
-  height: 150px;
+	width: 150px;
+	height: 150px;
 }
 
 .productName {
-  text-align: center;
+	text-align: center;
 }
 
 #priceAndCalories {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .productPrice {
-  color: #fdb91b;
-  padding: 5px;
-  margin: 5px;
+	color: #fdb91b;
+	padding: 5px;
+	margin: 5px;
 }
 
 .productCalories {
-  border-left: 1px solid black;
-  padding: 5px;
-  margin: 5px;
+	border-left: 1px solid black;
+	padding: 5px;
+	margin: 5px;
 }
 
+/* FOOTER STYLING STARTS */
+
 footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #2d2a24;
-  height: 40px;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #2d2a24;
+	height: 40px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
 }
 
 #copyright {
-  color: white;
-  font-weight: 1;
-  font-size: 13px;
+	color: white;
+	font-weight: 1;
+	font-size: 13px;
 }
+/* FOOTER STYLING ENDS */
+/* CART PAGE STYLING STARTS */
+
+.cartItem {
+	display: flex;
+	align-items: center;
+	border: 2px solid #eaedee;
+	border-radius: 20px;
+	justify-content: space-between;
+	padding: 10px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.cartProductImage {
+	max-width: 90px;
+	height: auto;
+}
+
+.productName {
+	margin-bottom: 5px;
+}
+
+.remove {
+	background-color: transparent;
+	border: none;
+	color: rgb(255, 0, 0);
+	text-decoration: underline;
+	padding: 0px 30px 0 20px;
+}
+
+.remove:hover {
+	color: #2d2a24;
+}
+
+#cartContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 750px;
+	margin-bottom: 30px;
+}
+
+#cartBody {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+}
+
+#cartContainer h1 {
+	margin-bottom: 10px;
+}
+
+.nameAndQty {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 403px;
+}
+
+#quantity {
+	width: 32px;
+}
+
+#subtotalContainer {
+	background-color: #fdb91b;
+	border-radius: 12px;
+	border: none;
+	height: 40px;
+}
+
+.checkout {
+	background-color: #2d2a24;
+	color: white;
+	padding: 10px 20px;
+	border-radius: 50px;
+	border-style: none;
+}
+
+.checkout:hover {
+	background-color: black;
+}
+
+#itemQty {
+	width: 100px;
+	text-align: center;
+}
+
+#subtotalContainer h2 {
+	width: 402px;
+	text-align: left;
+}
+/* CART PAGE STYLING ENDS */
