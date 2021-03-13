@@ -1,6 +1,85 @@
 * {
-	padding: 0px;
-	margin: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+/* Everything below this is the stylesheet for the products page */
+
+.back-button-link:link,
+.back-button-link:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+.back-button-link:hover {
+  text-decoration: underline;
+  color: #fdb91b;
+}
+
+.back-button {
+  position: absolute;
+  top: -2.5em;
+  left: -0.5em;
+}
+
+.product-container {
+  border: 3px solid #fdb91b;
+  border-radius: 1em;
+  width: 75%;
+  position: absolute;
+  top: 400px;
+  left: 50%;
+  transform: translate(-50%, -75%);
+  display: flex;
+}
+
+.info-layout {
+  padding: 1em;
+}
+
+.info-layout h2,
+.info-layout p {
+  padding-bottom: 0.5em;
+}
+
+.lower-buttons .add-minus {
+  display: flex;
+  position: absolute;
+  bottom: -2.5em;
+  left: 1em;
+}
+
+.add-minus #minus-quantity,
+.add-minus #add-quantity {
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  color: #f2f2f2;
+  background-color: #2d2a24;
+  border: 1px solid #2d2a24;
+}
+
+.lower-buttons .add-cart {
+  position: absolute;
+  bottom: -2.5em;
+  right: 1em;
+}
+
+#add-to-cart {
+  color: #f2f2f2;
+  background-color: #2d2a24;
+  border-radius: 1em;
+  height: 2em;
+  width: 10em;
+  border: 1px solid #2d2a24;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
 }
 
 #page-container {
