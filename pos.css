@@ -1,13 +1,49 @@
 * {
   padding: 0px;
   margin: 0px;
-}
-
-body {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
 /* Everything below this is the stylesheet for the products page */
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 10px;
+  border-bottom: 2px solid #eaedee;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  padding-right: 30px;
+}
+
+li {
+  margin: 0 10px;
+}
+
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+li a:hover {
+  color: #fdb91b;
+}
+
+li a:active {
+  text-decoration: none;
+  color: #2d2a24;
+}
+
+#logo {
+  max-width: 200px;
+}
 
 .back-button-link:link,
 .back-button-link:visited {
@@ -27,7 +63,8 @@ body {
 }
 
 .product-container {
-  border: 3px solid #fdb91b;
+  background-color: white;
+  border: 4px solid #fdb91b;
   border-radius: 1em;
   width: 75%;
   position: absolute;
@@ -38,35 +75,81 @@ body {
 }
 
 .info-layout {
-  padding: 1em;
+  padding: 2em 1em 1em 1em;
 }
 
 .info-layout h2,
 .info-layout p {
-  padding-bottom: 0.5em;
+  padding-bottom: 1.5em;
+}
+
+.info-layout span {
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .lower-buttons .add-minus {
   display: flex;
   position: absolute;
-  bottom: -2.5em;
+  bottom: -54px;
   left: 1em;
 }
 
-.add-minus #minus-quantity,
-.add-minus #add-quantity {
-  height: 2em;
-  width: 2em;
+.add-minus .minus-quantity,
+.add-minus .add-quantity {
+  height: 3em;
+  width: 3em;
   border-radius: 50%;
-  color: #f2f2f2;
-  background-color: #2d2a24;
-  border: 1px solid #2d2a24;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.radios {
+  position: absolute;
+  left: 7em;
+  top: 13px;
+  display: flex;
+}
+
+.add-minus input[type="radio"] {
+  margin-right: 1em;
+}
+
+.add-minus label {
+  position: relative;
+  bottom: 5px;
+  padding-right: 1em;
+  padding-left: -1em;
+}
+
+.add-quantity {
+  position: relative;
+  left: 1em;
+  cursor: pointer;
+}
+
+.add-quantity:hover,
+.minus-quantity:hover {
+  border: 1px solid #fdb91b;
+  color: #fdb91b;
+}
+
+.add-minus span {
+  position: relative;
+  top: 0.5em;
+  font-weight: bold;
+}
+
+.minus-quantity {
+  position: relative;
+  right: 1em;
+  cursor: pointer;
 }
 
 .lower-buttons .add-cart {
   position: absolute;
   bottom: -2.5em;
-  right: 1em;
+  right: -0.5em;
 }
 
 #add-to-cart {
@@ -79,7 +162,52 @@ body {
   cursor: pointer;
 }
 
+#add-to-cart:hover {
+  color: #fdb91b;
+  background-color: #2d2a24d2;
+}
+
+/* Applies to a screen-size of 768px or less ***************MOBILE VIEW***********/
 @media (max-width: 768px) {
+  .product-container {
+    border: 3px solid #fdb91b;
+    border-radius: 1em;
+    width: 75%;
+    position: absolute;
+    top: 400px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+  }
+
+  img {
+    height: 250px;
+    width: 250px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .info-layout h2,
+  .info-layout p {
+    padding-bottom: 1em;
+  }
+
+  .info-layout {
+    padding: 1em;
+  }
+
+  .radios {
+    position: absolute;
+    top: 3.5em;
+    left: -0.5em;
+    display: flex;
+  }
+
+  .add-minus input[type="radio"] {
+    margin-right: 1em;
+  }
 }
 
 #page-container {
