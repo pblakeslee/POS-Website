@@ -12,7 +12,8 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 10px;
+  /*Padding causing horizontal scroll
+  padding: 0 10px;*/
   border-bottom: 2px solid #eaedee;
   margin-bottom: 20px;
 }
@@ -276,6 +277,29 @@ li a:active {
 /*Product top buttons*/
 
 #productTop {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#productButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filterButton {
+  cursor: pointer;
+  margin: 10px;
+  font-size: 20px;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+=======
 	border: none;
 	display: flex;
 	justify-content: space-around;
@@ -294,9 +318,42 @@ li a:active {
 	border: none;
 }
 
+/*Button hover effects jsut becasue I feel like being fancy - Ami*/
+
+.filterButton:hover {
+  background-color: #fdb91b;
+  color: white;
+}
+
+.filterButton:focus {
+  outline: none;
+}
+
 /*Product cards styling */
 
 #productCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.productCard {
+  height: 30vh;
+  width: calc(100% - 66px);
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border: 3px solid #eaedee;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: row;
@@ -346,6 +403,9 @@ li a:active {
 	flex-direction: column;
 }
 
+.productCard:hover {
+  border-color: #fdb91b;
+}
 /*Product Card information*/
 
 #productImage {
@@ -485,4 +545,28 @@ footer {
 	width: 402px;
 	text-align: left;
 }
+
+/*Desktop view*/
+
+@media only screen and (min-width: 769px) {
+  #productTop {
+    flex-direction: row;
+    max-width: 1350px;
+    width: 85vw;
+  }
+
+  .productCard {
+    width: calc(33% - 66px);
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .productCard {
+    width: calc(25% - 66px);
+  }
+  #productCards {
+    max-width: 1350px;
+  }
+}
 /* CART PAGE STYLING ENDS */
+
