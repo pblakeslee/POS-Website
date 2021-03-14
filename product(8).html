@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="pos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <title>Brown Sugar Maple Cinnamon Latte</title>
+</head>
+<body>
+    <header>
+        <img
+          id="logo"
+          src="assets/SVG/decafPandaLogo.svg"
+          alt="Decaffeinated Panda Logo"
+        />
+        <nav>
+          <ul id="menu">
+            <li><a href="pos.html">MENU</a></li>
+            <li>
+              <!-- Have to link cart HTML once completed -->
+              <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+
+      
+    <div class="product-container">
+    <div class="back-button">
+        <a class="back-button-link" href="#"><<i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp; Back to menu</a>
+    </div>  
+            <img src="assets/brownSugar.png" alt="brown sugar maple cinnamon latte"> <!--This will be the product image -->
+            <div class="info-layout">
+                <h2>Brown Sugar Maple Cinnamon Latte</h2>
+                <p>A simple blend of brown sugar, maple syrup, cinnamon, milk, a double-shot of espresso and blended with ice</p>
+            <span>560 Cal.</span>
+            </div>
+        <div class="lower-buttons">
+        <div class="add-minus">
+            <button class="minus-quantity">-</button><span>1</span><button class="add-quantity">+</button>
+        </div>
+        <div class="add-cart">
+            <button id="add-to-cart"><i class="fas fa-shopping-cart"></i>Add to Cart   $1.99</button> <!--This will need to update with a price when customer hits the add or subtract buttons-->
+        </div>
+    </div>
+    </div>
+    <script src="pos.js"></script>
+</body>
+</html>
