@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="pos.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap"
-      rel="stylesheet"
-    />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="pos.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"/>
     <title>Banana Loaf Bread</title>
   </head>
   <body>
@@ -30,40 +28,32 @@
       </nav>
     </header>
 
+
     <div class="product-container">
-      <div class="back-button">
-        <a class="back-button-link" href="pos.html"
-          ><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp; Back to
-          menu</a
-        >
-      </div>
-      <img
-        class="productPageImage"
-        src="/POS-Website/assets/PNG/bananaLoaf.png"
-        alt="banana loaf bread"
-      />
-      <!--This will be the product image -->
-      <div class="info-layout">
-        <h2>Banana Loaf Bread</h2>
-        <p>
-          Bananas, walnuts and pecans combine into this moist, nutty, classic
-          banana bread. A perfect harmonious blend of deliciousness.
-        </p>
-        <span>420 Cal.</span>
-      </div>
-      <div class="lower-buttons">
+    <div class="back-button">
+        <a class="back-button-link" href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp; Back to menu</a>
+    </div>  
+            <img class="product-page-images" src="assets/PNG/bananaLoaf.png" alt="banana loaf bread"> <!--This will be the product image -->
+            <div class="info-layout">
+                <h2>Banana Loaf Bread</h2>
+                <p>Bananas, walnuts and pecans combine
+                into this moist, nutty, classic banana
+                bread. A perfect harmonious blend of
+                deliciousness.</p>
+            <span>420 Cal.</span>
+            </div>
+        <div class="lower-buttons">
         <div class="add-minus">
-          <button class="minus-quantity">-</button><span>1</span
-          ><button class="add-quantity">+</button>
+            <button class="minus-quantity" id="minus">-</button><input type="number" class="numOf" min="1"><button id="add" class="add-quantity">+</button>
         </div>
         <div class="add-cart">
           <button id="add-to-cart">
-            <i class="fas fa-shopping-cart"></i>Add to Cart $1.99
+            <i class="fas fa-shopping-cart"></i>Add to Cart <span class="price">$</span>
           </button>
           <!--This will need to update with a price when customer hits the add or subtract buttons-->
         </div>
       </div>
     </div>
-    <script src="pos.js"></script>
-  </body>
+    <script src="product.js"></script>
+</body>
 </html>
