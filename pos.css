@@ -46,6 +46,8 @@ li a:active {
   max-width: 200px;
 }
 
+/* PRODUCT PAGE STYLING START */
+
 .back-button-link:link,
 .back-button-link:visited {
   text-decoration: none;
@@ -73,6 +75,11 @@ li a:active {
   left: 50%;
   transform: translate(-50%, -75%);
   display: flex;
+}
+
+.productPageImage {
+  width: 20vw;
+  height: 40vh;
 }
 
 .info-layout {
@@ -167,6 +174,8 @@ li a:active {
   color: #fdb91b;
   background-color: #2d2a24d2;
 }
+
+/* PRODUCT PAGE STYLING END */
 
 /* Applies to a screen-size of 768px or less ***************MOBILE VIEW***********/
 @media (max-width: 768px) {
@@ -274,7 +283,7 @@ li a:active {
   max-width: 200px;
 }
 
-/*Product top buttons*/
+/*FILTER BUTTON STYLING STARTS*/
 
 #productTop {
   border: none;
@@ -316,8 +325,6 @@ li a:active {
   border: none;
 }
 
-/*Button hover effects jsut becasue I feel like being fancy - Ami*/
-
 .filterButton:hover {
   background-color: #fdb91b;
   color: white;
@@ -327,7 +334,9 @@ li a:active {
   outline: none;
 }
 
-/*Product cards styling */
+/*FILTER BUTTON STYLING ENDS*/
+
+/*PRODUCT CARD STYLING STARTS*/
 
 #productCards {
   display: flex;
@@ -353,10 +362,11 @@ li a:active {
   text-decoration: none;
   color: inherit;
 }
+
 #coldCoffee,
 #hotCoffee,
 #food {
-  height: 30vh;
+  height: 35vh;
   border: 3px solid #eaedee;
   border-radius: 20px;
   display: flex;
@@ -364,10 +374,10 @@ li a:active {
   align-items: center;
   flex-direction: column;
 }
+
 .productCard:hover {
   border-color: #fdb91b;
 }
-/*Product Card information*/
 
 #productImage {
   width: 150px;
@@ -396,6 +406,8 @@ li a:active {
   margin: 5px;
 }
 
+/*PRODUCT CARD STYLING ENDS*/
+
 /* FOOTER STYLING STARTS */
 
 footer {
@@ -415,6 +427,7 @@ footer {
   font-size: 13px;
 }
 /* FOOTER STYLING ENDS */
+
 /* CART PAGE STYLING STARTS */
 
 .cartItem {
@@ -506,100 +519,9 @@ footer {
   width: 402px;
   text-align: left;
 }
-/* FOOTER STYLING ENDS */
-/* CART PAGE STYLING STARTS */
+/* CART PAGE STYLING ENDS */
 
-.cartItem {
-  display: flex;
-  align-items: center;
-  border: 2px solid #eaedee;
-  border-radius: 20px;
-  justify-content: space-between;
-  padding: 10px;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.cartProductImage {
-  max-width: 90px;
-  height: auto;
-}
-
-.productName {
-  margin-bottom: 5px;
-}
-
-.remove {
-  background-color: transparent;
-  border: none;
-  color: rgb(255, 0, 0);
-  text-decoration: underline;
-  padding: 0px 30px 0 20px;
-}
-
-.remove:hover {
-  color: #2d2a24;
-}
-
-#cartContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 750px;
-  margin-bottom: 30px;
-}
-
-#cartBody {
-  width: 100vw;
-  display: flex;
-  justify-content: center;
-}
-
-#cartContainer h1 {
-  margin-bottom: 10px;
-}
-
-.nameAndQty {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 403px;
-}
-
-#quantity {
-  width: 32px;
-}
-
-#subtotalContainer {
-  background-color: #fdb91b;
-  border-radius: 12px;
-  border: none;
-  height: 40px;
-}
-
-.checkout {
-  background-color: #2d2a24;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 50px;
-  border-style: none;
-}
-
-.checkout:hover {
-  background-color: black;
-}
-
-#itemQty {
-  width: 100px;
-  text-align: center;
-}
-
-#subtotalContainer h2 {
-  width: 402px;
-  text-align: left;
-}
-
-/*Desktop view*/
+/* PRODUCT MAIN PAGE DESKTOP STYLING STARTS */
 
 @media only screen and (min-width: 769px) {
   #productTop {
@@ -621,4 +543,5 @@ footer {
     max-width: 1350px;
   }
 }
-/* CART PAGE STYLING ENDS */
+
+/* PRODUCT MAIN PAGE DESKTOP STYLING ENDS */
