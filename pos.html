@@ -38,145 +38,141 @@
 			</ul>
 		</nav>
   </header>
-  
-	<body>
-		<!--Product cards and filter buttons-->
-		<header id="productTop">
-			<h1>MENU</h1>
-			<div id="productButtons">
-				<button id="snacks">Snacks</button>
-				<button id="coldDrinks">Cold Drinks</button>
-				<button id="hotDrinks">Hot Drinks</button>
-			</div>
-		</header>
-		<div id="productCards">
-			<div id="coldCoffee" class="cold">
-				<img
-					id="productImage"
-					src="assets/PNG/lavendarMocha.png"
-					alt="Blended Lavender Mocha"
-				/>
-				<h2 class="productName">Blended Lavender Mocha</h2>
-				<div id="priceAndCalories">
-					<p class="productPrice">$4.99</p>
-					<p class="productCalories">380 Cal</p>
-				</div>
-			</div>
-			<div id="coldCoffee" class="cold">
-				<img
-					id="productImage"
-					src="assets/PNG/brownSugar.png"
-					alt="Brown Sugar Maple Cinnamon Latte"
-				/>
-				<h2 class="productName">
-					Brown Sugar Maple Cinnamon Latte
-				</h2>
-				<div id="priceAndCalories">
-					<p class="productPrice">$3.80</p>
-					<p class="productCalories">560 Cal</p>
-				</div>
-			</div>
-			<div id="coldCoffee" class="cold">
-				<img
-					id="productImage"
-					src="assets/PNG/coldBrew.png"
-					alt="Classic Cold Brew"
-				/>
-				<h2 class="productName">Classic Cold Brew</h2>
-				<div id="priceAndCalories">
-					<p class="productPrice">$3.00</p>
-					<p class="productCalories">5 Cal</p>
-				</div>
-			</div>
-			<div id="coldCoffee" class="cold">
-				<img
-					id="productImage"
-					src="assets/PNG/saltedCaramel.png"
-					alt="Iced Salted Caramel Macchiato"
-				/>
-				<h2 class="productName">
-					Iced Salted Caramel Macchiato
-				</h2>
-				<div id="priceAndCalories">
-					<p class="productPrice">$4.20</p>
-					<p class="productCalories">120 Cal</p>
-				</div>
-			</div>
-			<div id="hotCoffee" class="hot">
-				<img
-					id="productImage"
-					src="assets/PNG/dripCoffee.png"
-					alt="Drip Coffee"
-				/>
-				<h2 class="productName">Drip Coffee</h2>
-				<div id="priceAndCalories">
-					<p class="productPrice">$2.70</p>
-					<p class="productCalories">20 Cal</p>
-				</div>
-			</div>
-			<div id="hotCoffee" class="hot">
-				<img
-					id="productImage"
-					src="assets/PNG/hotChocolate.png"
-					alt="Hot Chocolate"
-				/>
-				<h2 class="productName">Hot Chocolate</h2>
-				<div id="priceAndCalories">
-					<p class="productPrice">$3.29</p>
-					<p class="productCalories">370 Cal</p>
-				</div>
-			</div>
-			<div id="hotCoffee" class="hot">
-				<img
-					id="productImage"
-					src="assets/PNG/blondeVanilla.png"
-					alt="Blonde Vanilla Latte"
-				/>
-				<h2 class="productName">Blonde Vanilla Latte</h2>
-				<div id="priceAndCalories">
-					<p class="productPrice">$4.99</p>
-					<p class="productCalories">510 Cal.</p>
-				</div>
-			</div>
-			<div id="hotCoffee" class="hot">
-				<img
-					id="productImage"
-					src="assets/PNG/darkChocolate.png"
-					alt="Dark Chocolate Mocha"
-				/>
-				<h2 class="productName">Dark Chocolate Mocha</h2>
-				<div id="priceAndCalories">
-					<p class="productPrice">$3.80</p>
-					<p class="productCalories">430 Cal</p>
-				</div>
-			</div>
-			<div id="food" class="snack">
-				<img
-					id="productImage"
-					src="assets/PNG/bananaLoaf.png"
-					alt="Banana Nut Loaf"
-				/>
-				<h2 class="productName">Banana Nut Loaf</h2>
-				<div id="priceAndCalories">
-					<p class="productPrice">$1.99</p>
-					<p class="productCalories">420 Cal</p>
-				</div>
-			</div>
-			<div id="food" class="snack">
-				<img
-					id="productImage"
-					src="assets/PNG/avocado.png"
-					alt="Avocado Toast"
-				/>
-				<h2 class="productName">Avocado Toast</h2>
-				<div id="priceAndCalories">
-					<p class="productPrice">$4.49</p>
-					<p class="productCalories">480 Cal</p>
-				</div>
-			</div>
-		</div>
-
-				<!-- Starting Footer. Put all other code above this line. -->
+  <!-- all other page content -->
+  <body>
+    <div id="page-container">
+      <div id="content-wrap">
+        <!--Product cards and filter buttons-->
+        <header id="productTop">
+          <h1>MENU</h1>
+          <div id="productButtons">
+            <button id="snacks" class="filterButton">Snacks</button>
+            <button id="coldDrinks" class="filterButton">Cold Drinks</button>
+            <button id="hotDrinks" class="filterButton">Hot Drinks</button>
+          </div>
+        </header>
+        <div id="productCards">
+          <a id="coldCoffee" class="cold productCard" href="/POS-Website/product(7).html">
+            <img
+              id="productImage"
+              src="assets/PNG/lavendarMocha.png"
+              alt="Blended Lavender Mocha"
+            />
+            <h2 class="productName">Blended Lavender Mocha</h2>
+            <div id="priceAndCalories">
+              <p class="productPrice">$4.99</p>
+              <p class="productCalories">380 Cal</p>
+            </div>
+          </a>
+          <a id="coldCoffee" class="cold productCard" href="/POS-Website/product(8).html">
+            <img
+              id="productImage"
+              src="assets/PNG/brownSugar.png"
+              alt="Brown Sugar Maple Cinnamon Latte"
+            />
+            <h2 class="productName">Brown Sugar Maple Cinnamon Latte</h2>
+            <div id="priceAndCalories">
+              <p class="productPrice">$3.80</p>
+              <p class="productCalories">560 Cal</p>
+            </div>
+          </a>
+          <a id="coldCoffee" class="cold productCard" href="/POS-Website/product(9).html">
+            <img
+              id="productImage"
+              src="assets/PNG/coldBrew.png"
+              alt="Classic Cold Brew"
+            />
+            <h2 class="productName">Classic Cold Brew</h2>
+            <div id="priceAndCalories">
+              <p class="productPrice">$3.00</p>
+              <p class="productCalories">5 Cal</p>
+            </div>
+          </a>
+          <a id="coldCoffee" class="cold productCard" href="/POS-Website/product(10).html">
+            <img
+              id="productImage"
+              src="assets/PNG/saltedCaramel.png"
+              alt="Iced Salted Caramel Macchiato"
+            />
+            <h2 class="productName">Iced Salted Caramel Macchiato</h2>
+            <div id="priceAndCalories">
+              <p class="productPrice">$4.20</p>
+              <p class="productCalories">120 Cal</p>
+            </div>
+          </a>
+          <a id="hotCoffee" class="hot productCard" href="/POS-Website/product(3).html">
+            <img
+              id="productImage"
+              src="assets/PNG/dripCoffee.png"
+              alt="Drip Coffee"
+            />
+            <h2 class="productName">Drip Coffee</h2>
+            <div id="priceAndCalories">
+              <p class="productPrice">$2.70</p>
+              <p class="productCalories">20 Cal</p>
+            </div>
+          </a>
+          <a id="hotCoffee" class="hot productCard" href="/POS-Website/product(4).html">
+            <img
+              id="productImage"
+              src="assets/PNG/hotChocolate.png"
+              alt="Hot Chocolate"
+            />
+            <h2 class="productName">Hot Chocolate</h2>
+            <div id="priceAndCalories">
+              <p class="productPrice">$3.29</p>
+              <p class="productCalories">370 Cal</p>
+            </div>
+          </a>
+          <a id="hotCoffee" class="hot productCard" href="/POS-Website/product(5).html">
+            <img
+              id="productImage"
+              src="assets/PNG/blondeVanilla.png"
+              alt="Blonde Vanilla Latte"
+            />
+            <h2 class="productName">Blonde Vanilla Latte</h2>
+            <div id="priceAndCalories">
+              <p class="productPrice">$4.99</p>
+              <p class="productCalories">510 Cal.</p>
+            </div>
+          </a>
+          <a id="hotCoffee" class="hot productCard" href="/POS-Website/product(6.).html">
+            <img
+              id="productImage"
+              src="assets/PNG/darkChocolate.png"
+              alt="Dark Chocolate Mocha"
+            />
+            <h2 class="productName">Dark Chocolate Mocha</h2>
+            <div id="priceAndCalories">
+              <p class="productPrice">$3.80</p>
+              <p class="productCalories">430 Cal</p>
+            </div>
+          </a>
+          <a id="food" class="snack productCard" href="/POS-Website/product(1).html">
+            <img
+              id="productImage"
+              src="assets/PNG/bananaLoaf.png"
+              alt="Banana Nut Loaf"
+            />
+            <h2 class="productName">Banana Nut Loaf</h2>
+            <div id="priceAndCalories">
+              <p class="productPrice">$1.99</p>
+              <p class="productCalories">420 Cal</p>
+            </div>
+          </a>
+          <a id="food" class="snack productCard" href="/POS-Website/product(2).html">
+            <img
+              id="productImage"
+              src="assets/PNG/avocado.png"
+              alt="Avocado Toast"
+            />
+            <h2 class="productName">Avocado Toast</h2>
+            <div id="priceAndCalories">
+              <p class="productPrice">$4.49</p>
+              <p class="productCalories">480 Cal</p>
+            </div>
+          </a>
+        </div>
 				<footer>
 					<p id="copyright">
 						©2021 Grand Circus. All Rights Reserved.

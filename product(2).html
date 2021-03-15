@@ -9,27 +9,24 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"/>
     <title>Avocado Toast</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <img
-          id="logo"
-          src="assets/SVG/decafPandaLogo.svg"
-          alt="Decaffeinated Panda Logo"
-        />
-        <nav>
-          <ul id="menu">
-            <li><a href="pos.html">MENU</a></li>
-            <li>
-              <!-- Have to link cart HTML once completed -->
-              <a href="#"><i class="fas fa-shopping-cart"></i></a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-
-
+      <img
+        id="logo"
+        src="assets/SVG/decafPandaLogo.svg"
+        alt="Decaffeinated Panda Logo"
+      />
+      <nav>
+        <ul id="menu">
+          <li><a href="pos.html">MENU</a></li>
+          <li>
+            <!-- Have to link cart HTML once completed -->
+            <a href="#"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
     <div class="product-container">
     <div class="back-button">
@@ -38,7 +35,10 @@
             <img class="product-page-images" src="assets/PNG/avocado.png" alt="avocado toast"> <!--This will be the product image -->
             <div class="info-layout">
                 <h2>Avocado Toast</h2>
-                <p>Sourdough toast topped with avocado mash, also available with tomato and/or hard-boiled egg and/or picked red onions.</p>
+                <p>Sourdough toast topped with avocado mash, 
+                   also available with tomato and/or hard-boiled 
+                   egg and/or picked red onions.</p>
+                   
             <span>480 Cal.</span>
             </div>
         <div class="lower-buttons">
@@ -46,9 +46,12 @@
           <button class="minus-quantity" id="minus">-</button><input type="number" class="numOf" min="1"><button id="add" class="add-quantity">+</button>
         </div>
         <div class="add-cart">
-            <button id="add-to-cart"><i class="fas fa-shopping-cart"></i>Add to Cart   $1.99</button> <!--This will need to update with a price when customer hits the add or subtract buttons-->
+          <button id="add-to-cart">
+            <i class="fas fa-shopping-cart"></i>Add to Cart <span class="price">$</span>
+          </button>
+          <!--This will need to update with a price when customer hits the add or subtract buttons-->
         </div>
-    </div>
+      </div>
     </div>
     <script src="product.js"></script>
 </body>
