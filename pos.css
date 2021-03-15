@@ -486,7 +486,7 @@ footer {
 	color: #2d2a24;
 }
 
-#cartContainer {
+.cartContainer {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -534,7 +534,7 @@ footer {
 	background-color: black;
 }
 
-#itemQty {
+.itemQty {
 	width: 100px;
 	text-align: center;
 }
