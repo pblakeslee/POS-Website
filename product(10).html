@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="pos.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"/>
     <title>Iced Salted Caramel Macchiato</title>
 </head>
 <body>
@@ -28,12 +29,12 @@
       </header>
 
 
-      
+
     <div class="product-container">
     <div class="back-button">
-        <a class="back-button-link" href="#"><<i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp; Back to menu</a>
+        <a class="back-button-link" href="#"><i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp; Back to menu</a>
     </div>  
-            <img src="assets/saltedCaramel.png" alt="iced salted caramel macchiato"> <!--This will be the product image -->
+            <img class="product-page-images" src="assets/PNG/saltedCaramel.png" alt="iced salted caramel macchiato"> <!--This will be the product image -->
             <div class="info-layout">
                 <h2>Iced Salted Caramel Macchiato</h2>
                 <p>Made with layers of creamy milk and two shots of espresso then served over ice, our Iced Macchiato is just what you need.</p>
@@ -41,13 +42,17 @@
             </div>
         <div class="lower-buttons">
         <div class="add-minus">
-            <button class="minus-quantity">-</button><span>1</span><button class="add-quantity">+</button>
+          <button class="minus-quantity" id="minus">-</button><input type="number" class="numOf" min="1"><button id="add" class="add-quantity">+</button>
+          <div class="radios">
+            <input type="radio" id="twelveOz" name="size" value="12oz"><label for="twelveOz">12oz</label>
+            <input type="radio" id="sixteenOz" name="size" value="16oz"><label for="sixteenOz">16oz</label>
+        </div>
         </div>
         <div class="add-cart">
             <button id="add-to-cart"><i class="fas fa-shopping-cart"></i>Add to Cart   $1.99</button> <!--This will need to update with a price when customer hits the add or subtract buttons-->
         </div>
     </div>
     </div>
-    <script src="pos.js"></script>
+    <script src="product.js"></script>
 </body>
 </html>
