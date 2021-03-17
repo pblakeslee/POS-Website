@@ -105,18 +105,6 @@ p.totalValue {
 	padding: 25px 15%;
 }
 
-button#checkoutButton {
-	width: 50%;
-	margin: 10px auto;
-	border-radius: 50px;
-	border: none;
-	background-color: #2d2a24;
-	color: white;
-	font-size: 25px;
-	padding: 15px;
-	display: flex;
-	justify-content: center;
-}
 .miniReceiptQuantityContainer {
 	display: flex;
 }
