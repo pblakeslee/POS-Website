@@ -180,6 +180,9 @@ button#checkoutButton {
 	text-decoration: none;
 }
 
+button#checkoutButton {
+	background-color: #2d2a24d2;
+}
 .miniCartQuantityContainer {
 	display: flex;
 }
