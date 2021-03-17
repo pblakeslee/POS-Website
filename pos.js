@@ -10,47 +10,53 @@
 
   //Creating the event listener for each button that is clicked//
 
-  snackButton.addEventListener("click", () => {
-    //looping through all the product cards//
-    for (let i = 0; i < productWrapper.children.length; i++) {
-      let product = productWrapper.children[i];
-      /*changing the visablity for each card if it contains the 
-	  correct property that matches the button*/
-      if (product.classList.contains("snack")) {
-        product.style.display = "flex";
-      } else {
-        product.style.display = "none";
+  if (snackButton !== null && snackButton !== undefined) {
+    snackButton.addEventListener("click", () => {
+      //looping through all the product cards//
+      for (let i = 0; i < productWrapper.children.length; i++) {
+        let product = productWrapper.children[i];
+        /*changing the visablity for each card if it contains the 
+		  correct property that matches the button*/
+        if (product.classList.contains("snack")) {
+          product.style.display = "flex";
+        } else {
+          product.style.display = "none";
+        }
       }
-    }
-  });
+    });
+  }
 
-  coldButton.addEventListener("click", () => {
-    //looping through all the product cards//
-    for (let i = 0; i < productWrapper.children.length; i++) {
-      let product = productWrapper.children[i];
-      /*changing the visablity for each card if it contains the 
+  if (coldButton !== null && coldButton !== undefined) {
+    coldButton.addEventListener("click", () => {
+      //looping through all the product cards//
+      for (let i = 0; i < productWrapper.children.length; i++) {
+        let product = productWrapper.children[i];
+        /*changing the visablity for each card if it contains the 
 	  correct property that matches the button*/
-      if (product.classList.contains("cold")) {
-        product.style.display = "flex";
-      } else {
-        product.style.display = "none";
+        if (product.classList.contains("cold")) {
+          product.style.display = "flex";
+        } else {
+          product.style.display = "none";
+        }
       }
-    }
-  });
+    });
+  }
 
-  hotButton.addEventListener("click", () => {
-    //looping through all the product cards//
-    for (let i = 0; i < productWrapper.children.length; i++) {
-      let product = productWrapper.children[i];
-      /*changing the visablity for each card if it contains the 
+  if (hotButton !== null && hotButton !== undefined) {
+    hotButton.addEventListener("click", () => {
+      //looping through all the product cards//
+      for (let i = 0; i < productWrapper.children.length; i++) {
+        let product = productWrapper.children[i];
+        /*changing the visablity for each card if it contains the 
 	  correct property that matches the button*/
-      if (product.classList.contains("hot")) {
-        product.style.display = "flex";
-      } else {
-        product.style.display = "none";
+        if (product.classList.contains("hot")) {
+          product.style.display = "flex";
+        } else {
+          product.style.display = "none";
+        }
       }
-    }
-  });
+    });
+  }
 
   // End here
 })();
