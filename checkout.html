@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decaffeinated Panda</title>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="pos.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css" />
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<div id="page-container">
+    <div id="content-wrap">
+        <!-- all other page content -->
+        <header>
+            <img id="logo" src="assets/SVG/decafPandaLogo.svg" alt="Decaffeinated Panda Logo" />
+            <nav>
+                <ul id="menu">
+                    <li><a href="pos.html">MENU</a></li>
+                    <li>
+                        <!-- Have to link cart HTML once completed -->
+                        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- all other page content -->
+
+        <body>
+            <div id="page-container">
+                <div id="checkoutContainer">
+                    <div class="checkoutForm">
+                        <h1>CHECKOUT</h1>
+                        <div class="formInfo">
+                            <label for="contactInfo">Contact Information</label>
+                            <input type="email" class="formInput" placeholder="Email" />
+                            <input type="number" class="formInput" placeholder="Phone Number" />
+                        </div>
+                        <div class="formInfo">
+                            <label for="contactInfo">Payment</label>
+                            <input type="number" class="formInput" placeholder="Credit Card Number" />
+                            <input type="text" class="formInput" placeholder="Name On Card" />
+                            <div class="smallFormInfo">
+                                <input type="number" class="formInput inputHalf"
+                                    placeholder="Expiration Date (MM/YY)" />
+                                <input type="number" class="formInput inputHalf" placeholder="Security Code" />
+                            </div>
+                        </div>
+                        <div class="formInfo">
+                            <label for="contactInfo">Billing Address</label>
+                            <div class="smallFormInfo">
+                                <input type="text" class="formInput inputHalf" placeholder="First Name" />
+                                <input type="text" class="formInput inputHalf" placeholder="Last Name" />
+                            </div>
+                            <input type="text" class="formInput" placeholder="Company (optional)" />
+                            <input type="text" class="formInput" placeholder="Address" />
+                            <input type="text" class="formInput" placeholder="Apartment, Suite, ect. (optional)" />
+                            <input type="text" class="formInput" placeholder="City" />
+                            <div class="smallFormInfo">
+                                <input type="text" class="formInput inputThird" placeholder="United States" />
+                                <input type="number" class="formInput inputThird" placeholder="Zip Code" />
+                                <input type="text" class="formInput inputThird" placeholder="State" />
+                            </div>
+                        </div>
+                    </div>
+                    <div id="miniCartContainer">
+                        <div class="miniCartItems">
+                            <div class="miniCartItem">
+                                <img src="/POS-Website/assets/PNG/saltedCaramel.png" alt="">
+                                <p class="itemName"> Salted Caramel </p>
+                                <p class="itemPrice"> $1.99</p>
+                            </div>
+                            <div class="miniCartItem">
+                                <img src="/POS-Website/assets/PNG/saltedCaramel.png" alt="">
+                                <p class="itemName">Salted Caramel</p>
+                                <p class="itemPrice">$1.99</p>
+                            </div>
+                        </div>
+                        <div id="totalContainer">
+                            <div class="totalCalculator">
+                                <p class="priceLabel">Subtotal</p>
+                                <p id="subtotalValue" class="priceValue">$XXX.XX</p>
+                                <p class="priceLabel">Tax</p>
+                                <p id="taxValue" class="priceValue">$XXX.XX</p>
+                            </div>
+                            <div class="finalTotal">
+                                <p class="totalLabel">Total</p>
+                                <p id="totalValue" class="totalValue">$XXX.XX</p>
+                            </div>
+                        </div>
+                        <a href="receipt.html"><button id="checkoutButton">PAY NOW</button></a>
+                    </div>
+                </div>
+            </div>
+            <footer id="footerStyling">
+                <p id="copyright">
+                    ©2021 Grand Circus. All Rights Reserved.
+                    Decaffeinated Panda is a registered
+                    trademark of Grand Circus.
+                </p>
+            </footer>
+            <script src="pos.js"></script>
+            <script src="checkout.js"></script>
+        </body>
+
+</html>
