@@ -17,9 +17,3 @@ As a team, our group designed an intentionally simple,and easily navigate dinter
 <img width="1277" alt="Screen Shot 2021-03-18 at 12 22 02 PM" src="https://user-images.githubusercontent.com/75629802/111660695-b8f09580-87e4-11eb-9b14-8087b978ff9b.png">
 <img width="1278" alt="Screen Shot 2021-03-18 at 12 22 23 PM" src="https://user-images.githubusercontent.com/75629802/111660686-b726d200-87e4-11eb-818f-48a895e86939.png">
 <img width="1279" alt="Screen Shot 2021-03-18 at 12 22 42 PM" src="https://user-images.githubusercontent.com/75629802/111660701-ba21c280-87e4-11eb-8b02-83b00e7efa2f.png">
-
-### Contributors
-- Paige Blakeslee (@pblakeslee)
-- Ami Ross (@AmiRoss27)
-- Brandi Tarver (@tarverbr)
-- Dan Cappellano (@cappellano-daniel)
