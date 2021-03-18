@@ -4,7 +4,7 @@
 This Point-Of-Sale Website is a basic, self-service application for a consumer-driven business called the Decaffeinated Panda.
 
 ## Motivation
-As a team, our group designed an intentionally simple,and easily navigate dinterface that prioritized the user experience, focusing on responsiveness and accessibility, in order to create a POS website that could be used by both an online shopper and an in-person vendor.
+As a team, our group designed an intentionally simple, and easily navigated interface that prioritizes the user experience, focusing on responsiveness and accessibility, in order to create a POS website that could be used by both an online shopper and an in-person vendor.
 
 ### Technologies Used
 - HTML
