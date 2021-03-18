@@ -1,4 +1,7 @@
 (function () {
+  //Hiding "Your cart is empty :(" if the cart has items
+  let hide = document.getElementsByClassName("emptyCart")[0];
+
   //Get Cart
   let cart = localStorage.getItem("cart");
   cart = JSON.parse(cart);
@@ -7,7 +10,9 @@
   if (cart === null) {
     cart = [];
   }
-
+  if (cart.length !== 0) {
+    hide.style.display = "none";
+  }
   //Items Container
   let cartItmes = document.getElementById("cartItmes");
 
