@@ -6,6 +6,7 @@
 	const snackButton = document.getElementById("snacks");
 	const coldButton = document.getElementById("coldDrinks");
 	const hotButton = document.getElementById("hotDrinks");
+	const showAll = document.getElementById("showAll");
 	const productWrapper = document.getElementById("productCards");
 
 	//Creating the event listener for each button that is clicked//

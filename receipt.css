@@ -21,6 +21,7 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	margin-bottom: 70px;
 }
 
 .thankYou {
@@ -34,7 +35,6 @@
 	align-items: center;
 	justify-content: center;
 	padding: 30px;
-	margin-bottom: 15px;
 }
 
 #receiptCartContainer {

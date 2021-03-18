@@ -236,11 +236,12 @@ button#checkoutButton:hover {
 
 #changeAmount {
 	width: 150px;
+	font-weight: 700;
 }
 .changeDue {
 	display: flex;
 	align-items: center;
-	border: 4px solid #ffce5d;
+	border: 2px solid #ffce5d;
 	border-radius: 7px;
 	height: 5vh;
 	width: 48%;
@@ -248,15 +249,14 @@ button#checkoutButton:hover {
 }
 
 .changeDue p {
-	font-size: 20px;
+	font-size: 16px;
 	width: 120px;
-	font-weight: 700;
 	text-align: center;
 }
 
 #cashProvided {
 	margin-top: 10px;
-	width: 100px;
+	width: 120px;
 	border-top-left-radius: 7px;
 	border-bottom-left-radius: 7px;
 	border-top-right-radius: 0px;
@@ -332,6 +332,31 @@ button#checkoutButton:hover {
 #videoOverlayContainer {
 	position: relative;
 }
+@media only screen and (max-width: 768px) {
+	#checkoutContainer {
+		flex-direction: column;
+		padding-bottom: 60px;
+	}
+	.checkoutForm {
+		padding-bottom: 10px;
+	}
+	.cashInputs {
+		flex-direction: column;
+		width: 100%;
+	}
+	.changeDue {
+		width: 100%;
+	}
+	#changeProvided {
+		width: 100%;
+	}
+	.inputContainer-left {
+		width: 100%;
+	}
+	.calculateChange {
+		width: 100%;
+	}
+}
 @media only screen and (min-width: 769px) {
 	.checkoutForm {
 		width: 60%;
@@ -346,8 +371,5 @@ button#checkoutButton:hover {
 @media only screen and (min-width: 1025px) {
 	.checkoutForm {
 		width: 66.9%;
-	}
-
-	#miniCartContainer {
 	}
 }
