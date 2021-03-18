@@ -98,7 +98,96 @@
 
 		let totalValue = document.getElementById("totalValue");
 		totalValue.innerText = "$" + roundedTotalWithTax;
+
+		let buttonCalc = document.querySelector(".calculateChange");
+
+		buttonCalc.addEventListener("click", () => {
+			// Targeting the Amount container
+			let changeDueField = document.getElementById("changeAmount");
+
+			// Collecting value from the imput
+			let cashProvided = document.getElementById("cashProvided")
+				.value;
+			// Evaluating the total that will be subtracted from the Cash provided
+			let totalChangeDue = 0;
+			let roundedTotalChangeDue = 0;
+
+			totalChangeDue = parseInt(cashProvided) - roundedTotalWithTax;
+			roundedTotalChangeDue = totalChangeDue.toFixed(2);
+			changeDueField.innerText = "$" + roundedTotalChangeDue;
+		});
 	}
+
+	let creditCardRadio = document.getElementById("cardPaymentSelection");
+	creditCardRadio.addEventListener("click", () => {
+		// Show Credit Card Field
+		let payWithCard = document.querySelector(".payWithCard");
+		payWithCard.style.display = "block";
+		// Hide Cash Field
+		let payWithCash = document.querySelector(".payWithCash");
+		payWithCash.style.display = "none";
+		// Hide Face ID Field
+		let payWithFace = document.querySelector(".payWithFaceID");
+		payWithFace.style.display = "none";
+	});
+
+	let cashRadio = document.getElementById("cashPaymentSelection");
+	cashRadio.addEventListener("click", () => {
+		// Hide Credit Card Field
+		let payWithCard = document.querySelector(".payWithCard");
+		payWithCard.style.display = "none";
+		// Show Cash Field
+		let payWithCash = document.querySelector(".payWithCash");
+		payWithCash.style.display = "block";
+		// Hide Face ID Field
+		let payWithFace = document.querySelector(".payWithFaceID");
+		payWithFace.style.display = "none";
+	});
+
+	let faceIDRadio = document.getElementById("faceIDPaymentSelection");
+	faceIDRadio.addEventListener("click", () => {
+		// Hide Credit Card Field
+		let payWithCard = document.querySelector(".payWithCard");
+		payWithCard.style.display = "none";
+		// Hide Cash Field
+		let payWithCash = document.querySelector(".payWithCash");
+		payWithCash.style.display = "none";
+		// Show Face ID Field
+		let payWithFace = document.querySelector(".payWithFaceID");
+		payWithFace.style.display = "flex";
+
+		// Turning on Camera for Face ID
+		var video = document.querySelector("#video");
+
+		if (navigator.mediaDevices.getUserMedia) {
+			navigator.mediaDevices
+				.getUserMedia({
+					video: true,
+				})
+				.then(function (stream) {
+					video.srcObject = stream;
+				})
+				.catch(function (err0r) {
+					console.log("Something went wrong!");
+				});
+		}
+	});
+
+	function pauseVid() {
+		let video = document.getElementById("video");
+		video.pause();
+	}
+
+	let shutter = document.querySelector(".cameraShutter");
+	shutter.addEventListener("click", () => {
+		let approved = document.getElementById("checkIcon");
+		approved.style.display = "block";
+		let face = document.getElementById("faceIcon");
+		face.style.display = "none";
+		pauseVid();
+	});
+
+	// Watching the cash input to see if the provided cash has been edited
 
 	// End here
 })();
