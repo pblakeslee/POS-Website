@@ -35,17 +35,57 @@
                         <div class="formInfo">
                             <label for="contactInfo">Contact Information</label>
                             <input type="email" class="formInput" placeholder="Email" />
-                            <input type="number" class="formInput" placeholder="Phone Number" />
+                            <input type="text" class="formInput" placeholder="Phone Number" />
                         </div>
                         <div class="formInfo">
                             <label for="contactInfo">Payment</label>
-                            <input type="number" class="formInput" placeholder="Credit Card Number" />
-                            <input type="text" class="formInput" placeholder="Name On Card" />
-                            <div class="smallFormInfo">
-                                <input type="number" class="formInput inputHalf"
-                                    placeholder="Expiration Date (MM/YY)" />
-                                <input type="number" class="formInput inputHalf" placeholder="Security Code" />
+                            <div class="paymentTypes">
+                                <div class="paymentSelection">
+                                    <input type="radio" id="cardPaymentSelection" name="Payment Type" value="Credit Card">
+                                    <label for="cardPaymentSelection">Pay With Credit Card</label>
+                                </div>
+                                <div class="paymentSelection">
+                                    <input type="radio" id="cashPaymentSelection" name="Payment Type" value="Cash">
+                                    <label for="cashPaymentSelection">Pay With Cash</label>
+                                </div>
+                                <div class="paymentSelection">
+                                    <input type="radio" id="faceIDPaymentSelection" name="Payment Type" value="Face ID">
+                                    <label for="faceIDPaymentSelection">Pay With Face ID</label>
+                                </div>
+
                             </div>
+                                <div class="payWithCard">
+                                    <input type="text" class="formInput" placeholder="Credit Card Number" />
+                                    <input type="text" class="formInput" placeholder="Name On Card" />
+                                    <div class="smallFormInfo">
+                                        <input type="text" class="formInput inputHalf"
+                                            placeholder="Expiration Date (MM/YY)" />
+                                        <input type="text" class="formInput inputHalf" placeholder="Security Code" />
+                                    </div>
+                                </div>
+
+                                <div class="payWithCash">
+                                    <label for="cashInput">Please enter the exact cash amount</label>
+                                    <div class="cashInputs">
+                                        <div class="inputContainer-left">
+                                    <input id="cashProvided" name="cashInput" type="number" class="formInput" min="0" placeholder="Cash Payment" />
+                                    <button class="calculateChange">CALCULATE</button>
+                                </div>
+                                    <div class="changeDue">
+                                        <p>Change Due: </p><p id="changeAmount">$0.00</p>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="payWithFaceID">
+                                    <div id="videoOverlayContainer">
+                                        <video autoplay="true" id="video">​</video>
+                                        <img id="faceIcon" src="assets/SVG/faceID.svg" alt="Face ID Scan">
+                                        <img id="checkIcon" src="assets/SVG/check.svg" alt="Face ID Approved">
+                                    </div>
+                                    <button class="cameraShutter"><i class="fas fa-camera fa-2x"></i></button>
+                                </div>
+
                         </div>
                         <div class="formInfo">
                             <label for="contactInfo">Billing Address</label>
@@ -59,7 +99,7 @@
                             <input type="text" class="formInput" placeholder="City" />
                             <div class="smallFormInfo">
                                 <input type="text" class="formInput inputThird" placeholder="United States" />
-                                <input type="number" class="formInput inputThird" placeholder="Zip Code" />
+                                <input type="text" class="formInput inputThird" placeholder="Zip Code" />
                                 <input type="text" class="formInput inputThird" placeholder="State" />
                             </div>
                         </div>
