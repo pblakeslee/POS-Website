@@ -298,9 +298,11 @@ button#checkoutButton:hover {
 }
 .payWithFaceID img {
 	width: 150px;
-	width: 150px;
 	position: absolute;
-	left: 21%;
+	left: 180px;
+	top: 120px;
+	margin: 0 auto;
+	z-index: 1;
 }
 #faceIcon {
 	opacity: 0.5;
@@ -328,9 +330,7 @@ button#checkoutButton:hover {
 }
 
 #videoOverlayContainer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	position: relative;
 }
 @media only screen and (min-width: 769px) {
 	.checkoutForm {
